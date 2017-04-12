@@ -14,8 +14,8 @@ In the `practice.js` file, we have added an event listener that waits
 for the document to be loaded before looking for the canvas element.  
 
 Create a [2D rendering context][CanvasRenderingContext2D] by grabbing
-the `canvas` element and then using `getContext`. Also, set the height
-and width of the canvas to 500.
+the `canvas` element by the tag name and then using `getContext`. Also,
+set the height and width of the canvas to 500.
 
 ## Phase II: Draw a Rectangle
 
@@ -25,10 +25,9 @@ this is working by typing `open index.html` in your terminal.
 
 ## Phase III: Draw a Circle
 
-Again, pick a color to set as the `fillstyle`. This time, use
-[`beginPath`][beginPath]. Also, set a `strokeStyle`. Use `arc` to
-draw a circle. Open `index.html` in your browser to view it. If you get
-stuck, view the example in the [docs][arc].
+Pick a color to set as the `fillstyle`, and a color to set as the
+`strokeStyle`. Use [`beginPath`][beginPath] and [`arc`][arc] to
+draw a circle. Open `index.html` in your browser to view it.
 
 ## Phase IV: Draw [your Favorite Shape]
 See [here][shapes] for inspiration. Also review
