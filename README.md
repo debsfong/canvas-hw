@@ -18,6 +18,10 @@ the `canvas` element and then using `getContext`.
 
 ## Phase II: Draw a Rectangle
 
+Pick a color to set as the `fillstyle` for your rectangle. Then use
+`fillRect` to draw a rectangle on the canvas. Check that this is working
+by typing `open index.html` in your terminal.  
+
 ## Phase III: Draw a Circle
 
 [CanvasRenderingContext2D]: https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
