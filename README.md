@@ -11,8 +11,7 @@ This is the element that we will be working with. By default, the canvas
 element has a width of 300px and a height of 150px.
 
 In the `practice.js` file, we have added an event listener that waits
-for the document to be loaded before looking for the canvas element.  
-
+for the document to be loaded before looking for the canvas element.
 Create a [2D rendering context][CanvasRenderingContext2D] by grabbing
 the `canvas` element by the tag name and then using `getContext`. Also,
 set the height and width of the canvas to 500.
