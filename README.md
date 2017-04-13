@@ -16,16 +16,17 @@ for the document to be loaded before looking for the canvas element.
 
 Create a [2D rendering context][CanvasRenderingContext2D]:
 
-1. grab the `canvas` element by id and save it to a ctx variable
+1. grab the `canvas` element by id and save it to a variable
 1. set the `height` and `width` attributes of the canvas to `500`
-1. call `getContext` with `2d` and save the return value as `ctx`
+1. call `getContext` on the canvas with `'2d'` as an argument and save
+the return value as `ctx`
   + you will be setting attributes and calling methods on `ctx` for the
 rest of this exercise
 
 ## Phase II: Draw a Rectangle
 
 1. pick a color (e.g. `'red'`, `rgb(255,255,255)`, etc. ) to set as the
-`fillStyle` attribute
+`fillStyle` attribute for `ctx`
 1. call [`fillRect`][fillRect] with the appropriate dimensions to draw
 the rectangle on the canvas
 1. check that everything's working by executing `open index.html` in
