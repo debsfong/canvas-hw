@@ -13,26 +13,44 @@ element has a width of 300px and a height of 150px.
 
 In the `practice.js` file, we have added an event listener that waits
 for the document to be loaded before looking for the canvas element.
-Create a [2D rendering context][CanvasRenderingContext2D] by grabbing
-the `canvas` element by the id and then using `getContext`. Also,
-set the height and width of the canvas to 500.
+
+Create a [2D rendering context][CanvasRenderingContext2D]:
+
+1. grab the `canvas` element by id and save it to a ctx variable
+1. set the `height` and `width` attributes of the canvas to `500`
+1. call `getContext` with `2d` and save the return value as `ctx`
+  + you will be setting attributes and calling methods on `ctx` for the
+rest of this exercise
 
 ## Phase II: Draw a Rectangle
 
-Pick a color to set as the `fillstyle` for your rectangle. Then use
-[`fillRect`][fillRect] to draw a rectangle on the canvas. Check that
-this is working by typing `open index.html` in your terminal.   
+1. pick a color (e.g. `'red'`, `rgb(255,255,255)`, etc. ) to set as the
+`fillStyle` attribute
+1. call [`fillRect`][fillRect] with the appropriate dimensions to draw
+the rectangle on the canvas
+1. check that everything's working by executing `open index.html` in
+your terminal
 
 ## Phase III: Draw a Circle
 
-Pick a color to set as the `fillstyle`, and a color to set as the
-`strokeStyle`. Use [`beginPath`][beginPath] and [`arc`][arc] to draw a
-circle. Open `index.html` in your browser to view it.
+To draw the circle:
+
+1. invoke [`beginPath`][beginPath] with no arguments
+1. invoke [`arc`][arc] with the appropriate dimensions to draw a circle
+1. pick a color to set as `strokeStyle`
+1. set the `lineWidth` attribute to some integer
+1. invoke `stroke` with no arguments
+1. open `index.html` in your browser to view it
+
+To fill in the circle:
+
+1. pick a color to set as `fillStyle`
+1. invoke `fill` with no arguments
+1. open `index.html` in your browser to view it
 
 ## Phase IV: Draw [your Favorite Shape]
 See [here][shapes] for inspiration. Also review these
 [examples][animation] of how to animate your drawings.   
-
 
 [CanvasRenderingContext2D]: https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
 [fillRect]: https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect
